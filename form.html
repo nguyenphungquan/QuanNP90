@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin cá nhân</title>
+</head>
+<body>
+<style>
+    #big{
+        color: brown;
+        font-weight: bolder;}
+    div{
+       padding-top: 20px;
+       font-weight: bolder;
+    }
+    #btn1{
+        color: white;
+        background-color: blue;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #btn2{
+        color: white;
+        background-color: red;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #chinhkhung{
+        padding-left:  50%;
+    }
+    #chinhkhungnho{
+        padding-left: 50px;
+    }
+</style>
+
+    <h1> Đơn đăng ký</h1>
+    <a id="big">
+    <form action="form.html" id="login" name="login" method="post" enctype="multipart/form-data">
+        <label for="User Name">User Name :</label>
+        <input type="text" id="User Name" name="User Name" required>
+        <br>
+        <br>
+
+        <label for="Password">Password :</label>
+        <input type="text" id="Password" name="=Password" required/>
+        </label>
+    </a>
+    <div>
+    Birthday: <input type="date"  name="sinh nhat"/><br><br>
+    Date and Time: <input type="datetime-local" name="date"/><br><br>
+    Month and Year: <input type="month" name="month"/><br><br>
+    Time: <input type="time" name="hour"/><br>
+    </div>
+    <br>
+    <br>
+    <p>Que quan</p>
+    <select>
+        <option value="Ho Chi Minh">Ho Chi Minh</option>
+        <option value="Ha Noi">Ha Noi</option>
+        <option value="Hai Duong">Hai Duong</option>
+    </select>
+    <br>
+    <br>
+    <a href="https://www.aia.com.vn/vi/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+    <div>  
+    <input type="checkbox" name="Policy_A" value="rule_A" checked>
+    <label>Đồng ý với điều khoản</label><br>
+    <input type="checkbox" name="Policy_B" value="rule_B">
+    <label> Không đồng ý với điều khoản</label><br><br>
+    <div id="chinhkhung">
+    <input id="btn1" type="Submit" value="submit">
+    <a id="chinhkhungnho"></a>
+    <input id="btn2" type="reset" value="reset">
+    </div>
+    </div>
+    <br>
+    </form>
+</body>
+</html>
